@@ -1,6 +1,6 @@
 # BlueBrie
 
-<img src="assets/bluebrie.png" alt="Blue Brie" style="border-radius: 10px;">
+<img src="assets/bluebrie.png" alt="Blue Brie" style="border-radius: 10px; width: 48px; height: 48px; vertical-align: middle; margin-left: 12px; margin-bottom: 4px;">
 
 BlueBrie is a simple telemetry dashboard for monitoring lentil instance [(See Lentil)](https://github.com/Daniel-Shunom/lentil).
 
