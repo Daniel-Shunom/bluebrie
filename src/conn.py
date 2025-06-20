@@ -35,5 +35,11 @@ class LentilConnection:
     
     def send_message(self, msg: str) -> str | requests.Response:
         payload = {"": "", "": ""}
+        response = requests.get(self.url, json=payload)
+
+        match response.status_code:
+            case 200 | 202: return response
+            case 400: return "bad request"
+            case _: return "something went wrong"
     
 

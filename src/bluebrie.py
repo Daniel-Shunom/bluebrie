@@ -272,24 +272,18 @@ def create_navigation():
 def start() -> None:
     """Enhanced navigation entry point with beautiful UI"""
     
-    # Load custom CSS
     load_css()
     
-    # Define pages for server telemetry
     _overview = st.Page("src/pages/dashboard/bb_dashboard.py", title="Overview", icon="🖥️")
     _system = st.Page("src/pages/peripherals/bb_peripherals.py", title="System", icon="⚙️") 
     _network = st.Page("src/pages/analytics/bb_analytics.py", title="Network", icon="🌐")
     _logs = st.Page("src/pages/reports/bb_reports.py", title="Logs", icon="📄")
     _config = st.Page("src/pages/settings/bb_settings.py", title="Config", icon="🔧")
     
-    # Create navigation
     navigation = st.navigation([_overview, _system, _network, _logs, _config])
     
-    # Add sidebar navigation for visual enhancement
     create_navigation()
     
-    # Run the navigation
     navigation.run()
 
-# Make sure to export the function
 __all__ = ["start"]
